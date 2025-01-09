@@ -4,7 +4,7 @@
 JavaScript uses OOP principles (Object-Oriented Programming). With these principles, we can create a complete program using the `class` keyword. Classes are structured blocks of code containing properties (data) and methods (functions). Classes always return objects.
 
 **Example**
-```
+```javascript
 class Animal {
   constructor(name, sound) {
     this.name = name; // Property
@@ -27,7 +27,7 @@ dog.makeSound(); // Output: Dog makes a sound: Bark
 Encapsulation means bundling properties (data) and methods (functions) inside a class while hiding internal details.
 
 **Example**
-```
+```javascript
 class BankAccount {
   #balance; // Private property (hidden from outside)
 
@@ -48,13 +48,12 @@ class BankAccount {
 const account = new BankAccount(1000);
 account.deposit(500); // Deposited: 500, New Balance: 1500
 console.log(account.getBalance()); // Output: 1500
-
 ```
 ### Abstraction
 Abstraction involves hiding complex code and showing a user-friendly interface.
 
 **Example**
-```
+```javascript
 class Car {
   startEngine() {
     console.log('Engine started'); // Simplified user interface
@@ -87,7 +86,7 @@ car.start();
 Inheritance allows one class to share its properties and methods with another class. Use the `extends` keyword for this purpose.
 
 **Example**
-```
+```javascript
 class Vehicle {
   constructor(type) {
     this.type = type;
@@ -117,7 +116,7 @@ bike.move(); // Output: Yamaha bike is zooming on the road
 Polymorphism allows different classes to use the same method name in different ways.
 
 **Example**
-```
+```javascript
 class Shape {
   area() {
     return 0; // Default implementation
@@ -152,5 +151,4 @@ shapes.forEach(shape => console.log(shape.area()));
 // Output:
 // 78.53981633974483 (Area of Circle)
 // 24 (Area of Rectangle)
-
 ```
